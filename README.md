@@ -8,8 +8,8 @@
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :group
-- belongs_to :user
+- belongs_to :group, through: :users
+- belongs_to :user, through: :groups
 
 ## usersテーブル
 
@@ -27,8 +27,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|groupname|integer|null: false|
-|user_id|integer|null: false, foreign_key: true|
+|name|integer|null: false|
 
 ### Association
 - has_many :users, through:  :groups_users
