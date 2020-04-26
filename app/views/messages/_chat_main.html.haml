@@ -1,0 +1,36 @@
+.chat_main
+  .chat_main__group-info
+    .group-info
+      .group_name
+        テストグループ名です
+      .group_member
+        Aさん,Bさん,Cさん
+    .exit_btn
+      = link_to "/", class: 'edit_btn'do
+        Edit
+  .chat_main__message-list
+    .chat_main_message_info
+      .caht_main__message-user
+        発信者です
+      .chat_main_message-datetime
+        ○月×日△△時△△分
+    .chat_main_message_text
+      これは本文です
+    .chat_main_message_info
+      .caht_main__message-user
+        発信者です
+      .chat_main_message-datetime
+        ○月×日△△時△△分
+    .chat_main_message_text
+      これは本文です
+  .chat_main__message-form
+    .chat_main_message_input-form
+      %input(type="text" style="border:none" placeholder="type a message")
+        
+      .input_image_btn
+        %label{class: "input_icon"}
+          = icon('fas', 'image')
+          .input_format
+            %input{type: "file"} 
+      
+    %input{type:"submit", class: "send_message_btn",value: "Send"}
