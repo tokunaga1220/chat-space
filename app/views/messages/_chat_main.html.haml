@@ -5,26 +5,26 @@
         テストグループ名です
       .group_member
         Aさん,Bさん,Cさん
-    .exit_btn
+    .btn
       = link_to "/", class: 'edit_btn'do
         Edit
   .chat_main__message-list
-    .chat_main_message_info
-      .caht_main__message-user
+    .message_info
+      .message-user
         発信者です
-      .chat_main_message-datetime
+      .message-datetime
         ○月×日△△時△△分
-    .chat_main_message_text
+    .message_text
       これは本文です
-    .chat_main_message_info
-      .caht_main__message-user
+    .message_info
+      .message-user
         発信者です
-      .chat_main_message-datetime
+      .message-datetime
         ○月×日△△時△△分
-    .chat_main_message_text
+    .message_text
       これは本文です
-  .chat_main__message-form
-    .chat_main_message_input-form
+  .message-form
+    .message_input-box
       %input(type="text" style="border:none" placeholder="type a message")
         
       .input_image_btn
