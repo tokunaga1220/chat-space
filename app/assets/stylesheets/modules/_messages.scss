@@ -9,11 +9,11 @@
   .side_bar{
   width: 300px;
   height: 100%;
-  background-color: #253141;
+  background-color: $section-color;
       
     &__user-name{
     height: 100px;
-    background-color: #253141;
+    background-color: $section-color;
     display: flex;
     align-items: center;
             
@@ -62,12 +62,12 @@
   .chat_main{
   height: 100%;
   width: calc(100% - 300px);
-  background-color: #ffffff;
+  background-color: $white-color;
     
     &__group-info{
     width: 100%;
     height: 100px;
-    background-color: #ffffff;
+    background-color: $white-color;
     padding-left: 40px;
     padding-top:  35px;
     display: flex;
@@ -80,7 +80,7 @@
         font-size: 20px;
         }
         .group_member{
-        color: #999999;
+        color: $gray-color;
         font-size: 12px;
         margin-top: 15px;
         }
@@ -111,7 +111,7 @@
         }
         .message-datetime{
         font-size: 12px;
-        color: #999999;
+        color: $gray-color;
         padding-left: 10px;
         }
       }  
@@ -134,7 +134,7 @@
       width: 100%;
       height: 50px;
       display: flex;
-      background-color: #ffffff;
+      background-color: $white-color;
       margin-left: 40px;
       position: relative;
         input {
@@ -158,7 +158,7 @@
     height: 50px;
     line-height: 50px;
     background-color: #38aef0;
-    color: #ffffff;
+    color: $white-color;
     margin-left: 15px;
     margin-right: 40px;
     padding: 0 30px;
