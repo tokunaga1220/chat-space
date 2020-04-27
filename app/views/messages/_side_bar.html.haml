@@ -2,13 +2,12 @@
   .side_bar__user-name
     .top_items
       .top_items__name
-        仮の名前
+        = current_user.name
       .top_items__icons
         = link_to "#", class: "top_items__icons__icon" do
           %i.far.fa-edit
-        = link_to "#", class: "top_items__icons__icon" do
-          %i.fas.fa-cog
-        
+        = link_to edit_user_path(current_user)  do
+          =icon('fas','cog', class: "top_items__icons__icon")       
   .side_bar__grouplist
     .group_name
       仮のグループ名です
