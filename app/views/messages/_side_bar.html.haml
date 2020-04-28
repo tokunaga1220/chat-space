@@ -4,12 +4,16 @@
       .top_items__name
         = current_user.name
       .top_items__icons
-        = link_to "#", class: "top_items__icons__icon" do
-          %i.far.fa-edit
+        = link_to new_group_path(current_user) do
+          =icon('far','edit', class: "top_items__icons__icon")
+        
         = link_to edit_user_path(current_user)  do
           =icon('fas','cog', class: "top_items__icons__icon")       
   .side_bar__grouplist
-    .group_name
-      仮のグループ名です
-    .group_status
-      まだメッセージがありません
+    -current_user.groups.each do |group|
+      .group
+        = link_to "#", class:"group"do
+          .group_name
+            = group.name
+          .group_status
+            まだメッセージがありません
