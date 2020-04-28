@@ -43,19 +43,22 @@
 
     &__grouplist{
     background-color: #2f3e51;
-    color: #ffffff;
+    height: calc(100vh - 100px);
     padding-left: 20px;
     padding-right: 20px;
+      .group{
+        text-decoration: none;
+        color: #ffffff;
+        .group_name{
+        font-size: 15px;
+        padding-top: 20px;
+        }
 
-      .group_name{
-      font-size: 15px;
-      padding-top: 20px;
-      }
-
-      .group_status{
-      font-size: 11px;
-      margin-top: 5px;
-      }
+        .group_status{
+        font-size: 11px;
+        margin-top: 5px;
+        }
+      } 
     }
   }
 

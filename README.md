@@ -1,5 +1,5 @@
 # README
-
+## how to use GitHub Desktop
 ## groups_usersテーブル
 
 |Column|Type|Options|
