@@ -4,8 +4,9 @@
       .group_name
         = @group.name
       .group_member
-        - @group.users.each do |user|
-          = user.name
+        Member:
+        - @group.users.each do |user| 
+          = user.name 
         
     .btn
       = link_to edit_group_path(@group), class: 'edit_btn'do
